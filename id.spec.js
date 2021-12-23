@@ -2,6 +2,10 @@ test('Jest is working', () => {
     expect(1).toBe(1);
 });
 
+const getNewId = () => {
+    return Math.random();
+}
+
 test('returns a random number', () => {
     const mockMath = Object.create(global.Math);
     mockMath.random = jest.fn(() => 0.75);
